@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Punny Web</h1>
+    <p>Website akan segera dapat diakses</p>
+    <p>pada 10/10/2021</p>
+    <p>now: <span id="Now"></span></p> 
+    <input type="email" id="username">
+    <button onclick="notif()">get notifcation</button>
+    <script>
+        let today = new Date(Date.now());
+        let now = document.getElementById("Now");
+        now.innerHTML = today.toLocaleDateString();
+        function notif() {
+            let text = document.getElementById("username").value;
+            alert(text)
+        }
+    </script>
+
+</body>
+</html>
